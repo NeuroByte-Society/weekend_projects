@@ -1,4 +1,4 @@
-a=int(input("choose 1 for celcius to fahrenheit , 2 for fahrenheit to celsius,3 for celsius to kelvin, 4 for kelvin to celsius \n"))
+a=int(input("choose 1 for celsius to fahrenheit , 2 for fahrenheit to celsius,3 for celsius to kelvin, 4 for kelvin to celsius \n"))
 
 if a==1:
     c=float(input("enter temperature in celsius"))
