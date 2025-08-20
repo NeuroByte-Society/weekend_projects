@@ -8,5 +8,10 @@
     "url": "https://example.com",
     "created_at": "2025-08-20T17:35:22.534711",
     "access_count": 0
+  },
+  "4j8X1K": {
+    "url": "https://example.com/very/long/path/to/some/resource",
+    "created_at": "2025-08-20T17:36:26.558257",
+    "access_count": 1
   }
 }
