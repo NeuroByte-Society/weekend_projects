@@ -1,2 +1,10 @@
 # Ignore URL Shortener data file
 week1_projects/**/URL_Shortener/url_data.json
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Chat Simulator conversation history files
+week1_projects/**/chat_simulator/chat_history_*.txt
