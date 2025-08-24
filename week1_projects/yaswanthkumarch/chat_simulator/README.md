@@ -31,8 +31,4 @@ The project demonstrates the use of Python syntax, conditional statements, loops
 
 Looking forward to feedback and suggestions. Thank you!
 
-
-
-
-
 [Yaswanth] – Chat Simulator Project
