@@ -85,7 +85,7 @@ def main():
     degrees = input(f'\nConvert how many degrees {source} to {destination}?\n\n: ')
     invalid = True
     while invalid:
-      if degrees.isdigit():
+      if isinstance(float(degrees), float):
         degrees = float(degrees)
         invalid = False
       else:
@@ -96,10 +96,10 @@ def main():
     again = input("\nWould you like to perform another conversion? (Y or N)\n\n: ")
     invalid = True
     while invalid:
-      if again == "Y":
+      if again == "Y" or again == "y":
         running = True
         invalid = False
-      elif again == "N":
+      elif again == "N" or again == "n":
         running = False
         invalid = False
       else:
