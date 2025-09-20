@@ -36,6 +36,9 @@ def typing_speed_test():
         print(f"It took you, {secs2:.2f} seconds!")
         print(f"Your accuracy: {accuracy2:.2f}%")
 
+    else:
+        print("\nNot too bad try again and get better results for a harder challenge!")
+
 def accuracy_checker(prompt:str, user_input:str):
     correct_char = 0
 
