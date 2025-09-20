@@ -1,3 +1,5 @@
+import time
+
 """Create a new folder: your_name/typing_speed_tester/
 Add main script: typing_speed_tester.py
 Include a sample prompt in code (or load from prompts.txt)
@@ -23,4 +25,24 @@ Example input/output
 
 (Optional) Add requirements.txt (if you use any libraries)"""
 def typing_speed_test():
-    pass
+    # WPM = (characters_typed / 5) / minutes_elapsed
+    # accuracy = (correct_chars / total_chars_typed) * 100
+
+    print("Type this sentence as fast as you can!")
+
+    prompt1 = "The quick brown fox jumps over the lazy dog."
+    prompt2 = "Despite the heavy rain, Julia sprinted across the crowded street—dodging cars, " \
+                "splashing through puddles, and laughing the entire way."
+    
+    print(prompt1)
+    
+    start = time.time()
+    typing = input(">>> ")
+    end = time.time()
+
+
+typing_speed_test()
+    
+
+
+    
