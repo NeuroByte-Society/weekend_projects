@@ -31,14 +31,21 @@ def typing_speed_test():
     print("Type this sentence as fast as you can!")
 
     prompt1 = "The quick brown fox jumps over the lazy dog."
-    prompt2 = "Despite the heavy rain, Julia sprinted across the crowded street—dodging cars, " \
-                "splashing through puddles, and laughing the entire way."
+    # prompt2 = "Despite the heavy rain, Julia sprinted across the crowded street—dodging cars, " \
+    #             "splashing through puddles, and laughing the entire way."
     
     print(prompt1)
-    
+
     start = time.time()
-    typing = input(">>> ")
+    typed_response = input(">>> ")
     end = time.time()
+
+    characters_typed = len(typed_response.split())
+
+    WPM = (characters_typed / 5) / (end - start)
+
+    print(f"Words per minute: {WPM:.2f} seconds")
+
 
 
 typing_speed_test()
