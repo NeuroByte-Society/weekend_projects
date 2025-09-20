@@ -1,6 +1,8 @@
 import time
 
 def typing_speed_test():
+    start = input("Welcome to the typing test!\nPress 'enter' to start! ")
+
     print("\nvvv Type this sentence as fast as you can! vvv\n   ----------------------------------------")
 
     prompt1 = "The quick brown fox jumps over the lazy dog."
@@ -20,8 +22,8 @@ def typing_speed_test():
     print(f"It took you, {secs1:.2f} seconds!")
     print(f"Your accuracy: {accuracy1:.2f}%")
 
-    if secs1 < 10 and accuracy1 > 80:
-        print("You're ready for a harder challenge!")
+    if secs1 < 12 and accuracy1 > 60:
+        start = input("\nYou're ready for a harder challenge!\nPress 'enter' to start! ")
         print("\nvvv Type this sentence as fast as you can! vvv\n   ----------------------------------------")
         print(f"{prompt2}\n   ----------------------------------------")
         
@@ -34,22 +36,22 @@ def typing_speed_test():
         accuracy2 = accuracy_checker(prompt2, typed_response2)
 
         print(f"It took you, {secs2:.2f} seconds!")
-        print(f"Your accuracy: {accuracy2:.2f}%")
+        print(f"Your accuracy: {accuracy2:.2f}%\n Great job!")
+        
 
     else:
         print("\nNot too bad try again and get better results for a harder challenge!")
 
 def accuracy_checker(prompt:str, user_input:str):
-    correct_char = 0
-
-    prompt_strip = prompt.strip()
-    user_input_strip = user_input.strip()
+    """
+    Returns accuracy as the percentage of characters in the prompt 
+    that match the user's input (position by position).
+    """
+    prompt_words = prompt.strip().split()
+    user_words = user_input.strip().split()
     
-    for i in range(min(len(prompt_strip), len(user_input_strip))):
-        if prompt_strip[i] == user_input_strip[i]:
-            correct_char += 1
-    
-    accuracy = (correct_char / len(prompt)) * 100
+    correct_words = sum(1 for p, u in zip(prompt_words, user_words) if p == u)
+    accuracy = (correct_words / len(prompt_words)) * 100 if len(prompt_words) > 0 else 0.0
 
     return accuracy
 
