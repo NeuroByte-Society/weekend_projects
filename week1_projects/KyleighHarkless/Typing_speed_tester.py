@@ -1,7 +1,7 @@
 import time
 
 def typing_speed_test():
-    start = input("Welcome to the typing test!\nPress 'enter' to start! ")
+    start = input("\nWelcome to the typing test!\nPress 'enter' to start! ")
 
     print("\nvvv Type this sentence as fast as you can! vvv\n   ----------------------------------------")
 
