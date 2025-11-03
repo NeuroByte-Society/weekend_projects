@@ -1,3 +1,6 @@
+C_CONSTANT = 9/5
+F_CONSTANT = 32
+
 # Choose the unit of temperature conversion
 unit = input("Choose the unit of temperature conversion (C/F): ").strip().upper()
 
@@ -6,11 +9,11 @@ temp = float(input("Enter the temperature: "))
 
 # Function to convert Celsius to Fahrenheit
 def temp_c_to_f(c):
-    return (c*9/5) + 32
+    return (c*C_CONSTANT) + F_CONSTANT
 
 # Function to convert Fahrenheit to Celsius
 def temp_f_to_c(f):
-    return (f - 32) * 5/9
+    return (f - F_CONSTANT) * 1/C_CONSTANT
 
 # Check the chosen unit and perform the conversion
 if unit == "C":
