@@ -1,6 +1,14 @@
 Amandapanda00 – Armstrong Number Checker
 What the project does: 
-This project determines whether a given integer is an Armstrong number—a number equal to the sum of the cubes of its digits equals the number itself (153 = 1³ + 5³ + 3³ = 153).
+This project determines whether a given integer is an Armstrong number. An Armstrong number is a number that is equal to the sum of its digits, each raised to the power of the number of digits. (153 = 1³ + 5³ + 3³ = 153).
+
+The program allows you to:
+
+* Enter numbers directly from the keyboard, or
+
+* Read and process multiple numbers from a file.
+
+It includes proper error handling, file-processing safety, and clear output formatting.
 
 How to run it:
 1. Make sure Python is installed on your computer.
@@ -50,6 +58,12 @@ Invalid entry on line 6: 'xyz'
 Line 7: 9474 = Successfully converted to an integer. Checked by is_armstrong(). Output:
 9474 is an Armstrong number.
 
+Line 8: -45 = Successfully converted to an integer. Checked by is_armstrong(). Output:
+-45 is not an Armstrong number.
+
+Line 9: -153 = Successfully converted to an integer. Checked by is_armstrong(). Output:
+-153 is not an Armstrong number.
+
 This file demonstrates:
 
 * Try/except blocks catching invalid data (abc and xyz).
@@ -79,6 +93,33 @@ Testing
 * Flake8: Checks code against Python style guidelines (PEP 8).
 
 * Pydocstyle: Checks that documentation is complete and clear, ensuring maintainability.
+
+Updates Included in This Version
+
+1. process_result() now returns a string instead of printing directly. This improves testability and separation of concerns.
+
+2. main() is updated so all printing happens in one place, following recommended best practices.
+
+3. Improved documentation for clarity.
+
+4. Updated file-processing function to include:
+* Files are opened using encoding="utf-8" to ensure proper handling of characters in different environments and locales.
+
+* This prevents issues with non-ASCII characters and ensures consistent behavior across operating systems.
+
+
+Future Improvements / Suggestions
+
+Here are recommended enhancements that could be added:
+
+
+* Add GUI version 
+
+* Limit maximum allowed digits/value to avoid CPU/memory DoS from huge inputs and report if input is too large.
+
+* Expand pytest coverage to include file-processing tests
+
+* Add a GitHub Actions workflow 
 
 
 

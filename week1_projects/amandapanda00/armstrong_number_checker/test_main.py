@@ -13,3 +13,7 @@ def test_4_digit_armstrong():
 
 def test_1_digit_armstrong():
     assert is_armstrong(5)
+
+
+def test_negative_number():
+    assert not is_armstrong(-153)
