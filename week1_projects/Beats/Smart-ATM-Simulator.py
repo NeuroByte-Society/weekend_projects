@@ -1,4 +1,6 @@
+
 """
+======Steps to write code=========
 step1:-print the first message "===== NeuroByte ATM ====="
 step2:- make a dictanary of customers in which has each each customer data like Name ,Balance , Pin_code
 step3:-Take input from user for  pin code
