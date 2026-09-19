@@ -11,7 +11,7 @@ After completing basics like variables, loops, conditions, strings, lists, dicts
 ### 🔢 Logic & Syntax Practice
 
 1. **Second Largest Number**  
-   Write a function to find the second largest number in a list.  
+   Write a function to find the second largest from  list.  
    Input: `[23, 45, 12, 67, 45, 89, 67]`
 
 2. **Check Pangram**  
