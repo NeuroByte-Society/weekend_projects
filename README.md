@@ -8,11 +8,7 @@ After completing basics like variables, loops, conditions, strings, lists, dicts
 
 ## ✅ Skill Testing: Practice Problems
 
-### 🔢 Logic & Syntax Practice
-
-1. **Second Largest Number**  
-   Write a function to find the second largest number in a list.  
-   Input: `[23, 45, 12, 67, 45, 89, 67]`
+### 🔢 Logic & Syntax 
 
 2. **Check Pangram**  
    Check if a given string contains all 26 English alphabets.
